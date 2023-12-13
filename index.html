@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Agent Parser</title>
+    <!-- Include Tailwind CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Include Poppins font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-purple-500 text-gray-800">
+    <header class="bg-gradient-to-r from-blue-700 to-purple-700 text-white text-center py-4">
+        <h1 class="text-4xl font-extrabold">User-Agent Parser</h1>
+            <!-- Menu bar -->
+    <nav class="menu-bar">
+        <ul class="inline-flex list-none">
+            <li class="menu-item"><a href="#">Home</a></li>
+            <li class="menu-item"><a href="#">About</a></li>
+            <li class="menu-item"><a href="#">Services</a></li>
+            <li class="menu-item"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main class="container mx-auto mt-4 md:mt-8">
+        <section class="bg-white rounded-lg shadow-lg p-8 mt-4 md:mt-8">
+            <h1 class="text-3xl font-semibold mb-6">Hey there, web explorers! 🌐✨</h1>
+            <p class="text-lg mb-8">Welcome to our awesome User-Agent Parser! This is the place where magic happens, and we make sense of all the techy jumble that comes from different devices visiting websites. Think of it as a super-smart detective that figures out who's who in the vast world of the internet.</p>
+            <div class="flex justify-start">
+                <button onclick="parseUserAgent()" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full focus:outline-none focus:ring focus:ring-blue-200 transition duration-300 ease-in-out">Auto Detect</button>
+                <button onclick="copyUserAgent()" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full ml-4 focus:outline-none focus:ring focus:ring-blue-200 transition duration-300 ease-in-out">Copy</button>
+            </div>
+        </section>
+        <div class="mt-4 md:mt-8 bg-white rounded-lg shadow-lg p-4"> <!-- Adjusted margin here -->
+            <h2 class="text-2xl font-semibold mb-4 mt-2">Parsed User Agent</h2>
+            <p class="mb-2 pl-2"><strong>User-Agent:</strong> <span id="userAgent"></span></p>
+            <p class="mb-2 pl-2"><strong>Browser:</strong> <span id="browser"></span></p>
+            <p class="mb-2 pl-2"><strong>Browser Version:</strong> <span id="browserVersion"></span></p>
+            <p class="mb-2 pl-2"><strong>Operating System:</strong> <span id="os"></span></p>
+            <p class="mb-2 pl-2"><strong>IP Address:</strong> <span id="ipAddress"></span></p>
+            <p class="mb-2 pl-2"><strong>WebGL Support:</strong> <span id="webGLSupport"></span></p>
+            <p class="mb-2 pl-2"><strong>Canvas Support:</strong> <span id="canvasSupport"></span></p>
+            <p class="mb-2 pl-2"><strong>Time Zone:</strong> <span id="timeZone"></span></p>
+            <p class="mb-2 pl-2"><strong>Languages:</strong> <span id="languages"></span></p>
+            <p class="mb-2 pl-2"><strong>Device:</strong> <span id="device"></span></p>
+        </div>
+    </main>
+    <footer class="fixed bottom-0 w-full bg-gradient-to-r from-blue-700 to-purple-700 text-white text-center py-4 mt-10%">
+        <p>&copy; 2023 User-Agent Parser</p>
+    </footer>    
+    <script src="script.js"></script>
+</body>
+</html>

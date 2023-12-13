@@ -1,0 +1,30 @@
+        /* Custom CSS for adding Poppins font */
+        body {
+          font-family: 'Poppins', sans-serif;
+      }
+
+      /* Custom CSS to add margin to .shadow-lg */
+      .shadow-lg {
+          margin: 10px;
+      }
+
+      /* Custom CSS for the menu bar */
+      .menu-bar {
+          background-color: transparent;
+          display: flex;
+          justify-content: center; /* Horizontally center items */
+          align-items: center; /* Vertically center items */
+          height: 100px; /* Adjust the height as needed */
+      }
+
+      .menu-item {
+          color: #fff; /* Change to your preferred text color */
+          font-weight: bold;
+          text-decoration: none;
+          padding: 10px;
+          transition: background-color 0.3s;
+      }
+
+      .menu-item:hover {
+          background-color: rgba(74, 144, 226, 0.5); /* Change to your preferred hover color */
+      }
